@@ -12,7 +12,7 @@ namespace Assignment4
 		private string _password;
 		private int _userID;
 
-		public void login()
+		public virtual void login()
 		{
 			throw new NotImplementedException();
 		}

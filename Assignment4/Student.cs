@@ -95,6 +95,14 @@ namespace Assignment4
 		{
 			_schedules[ScheduleName].printStudentSchedule();
 		}
+		public void viewSchedule()
+		{
+            foreach (KeyValuePair<string, Schedule> entry in _schedules)
+			{
+				if( _schedules[entry.Key].active == true )
+				_schedules[entry.Key].printStudentSchedule();
+			}
+		}
 
 	}
 }
